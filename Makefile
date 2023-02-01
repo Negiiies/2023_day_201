@@ -55,7 +55,7 @@ ifdef DEBUG
 CFLAGS += -g
 endif
 
-all: $(NAME_TEST)
+all: $(NAME_TEST)$(NAME)
 
 $(NAME): $(OBJS)
 	$(CC) $(OBJS) $(LDFLAGS) -o ar rc $(NAME)
